@@ -1,0 +1,14 @@
+[package]
+name = "serverwiz"
+version = "0.1.0"
+authors = [""]
+edition = "2024"
+rust-version = "1.91.1"
+description = "A tool made for installing, updating and running modded minecraft servers using packwiz."
+documentation = "https://geertbruls.github.io/serverwiz"
+readme = "../README.md"
+license = "LGPL-2.1"
+license-file = "../LICENSE"
+
+[dependencies]
+clap = { version = "4.5.53", features = ["derive"] }
