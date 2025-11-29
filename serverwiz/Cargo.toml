@@ -8,7 +8,6 @@ description = "A tool made for installing, updating and running modded minecraft
 documentation = "https://geertbruls.github.io/serverwiz"
 readme = "../README.md"
 license = "LGPL-2.1"
-license-file = "../LICENSE"
 
 [dependencies]
 clap = { version = "4.5.53", features = ["derive"] }
