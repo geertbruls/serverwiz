@@ -8,6 +8,8 @@ RUN cargo install --path .
 
 FROM fedora:43 AS packwiz
 
+ENV PATH="/root/go/bin:${PATH}"
+
 RUN dnf install -y \
     ca-certificates \
     golang \
