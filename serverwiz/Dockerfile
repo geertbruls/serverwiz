@@ -6,11 +6,12 @@ COPY . .
 
 RUN cargo install --path .
 
-FROM debian:stable-slim AS packwiz
+FROM fedora:43 AS packwiz
 
-RUN apt-get update && \
-    apt-get install -y golang ca-certificates && \
-    update-ca-certificates
+RUN dnf install -y \
+    ca-certificates \
+    golang \
+    && dnf clean all
 
 RUN go install github.com/packwiz/packwiz@latest
 
